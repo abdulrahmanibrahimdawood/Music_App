@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:music/constants.dart';
 import 'package:music/widgets/Custom_image_when_open_app.dart';
 import 'package:music/widgets/custom_icon_buttom_started.dart';
 import 'package:music/widgets/custom_sub_title.dart';
@@ -40,16 +41,24 @@ class BodyThirdOpenPage extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(left: 30.0),
                 child: CustomTextButtom(
-                  fontSize: 18,
-                  text: 'skip',
-                  hight: 50,
-                  width: 100,
+                  borderColor: kPrimaryColor,
+                  colorFont: kPrimaryColor.withOpacity(0.4),
+                  fontSize: 20,
+                  text: 'log in',
+                  hight: 60,
+                  width: 120,
                   onTap: () {},
                 ),
               ),
               Padding(
                 padding: const EdgeInsets.only(right: 16.0),
-                child: CustomIconBottomStarted(
+                child: CustomTextButtom(
+                  colorFont: Colors.white,
+                  color: kPrimaryColor,
+                  fontSize: 20,
+                  text: 'register',
+                  hight: 60,
+                  width: 120,
                   onTap: () {},
                 ),
               ),

@@ -41,11 +41,14 @@ class BodyScoundtOpenPage extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(left: 30.0),
                 child: CustomTextButtom(
+                  colorFont: kPrimaryColor.withOpacity(0.4),
                   fontSize: 18,
                   text: 'skip',
                   hight: 50,
                   width: 100,
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pushNamed(context, kThirdOpenPage);
+                  },
                 ),
               ),
               Padding(
