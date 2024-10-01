@@ -3,9 +3,6 @@ import 'package:music/constants.dart';
 import 'package:music/pages/first_open_page.dart';
 import 'package:music/pages/scound_open_page.dart';
 import 'package:music/pages/third_open_page.dart';
-import 'package:music/widgets/body_first_open_page.dart';
-import 'package:music/widgets/body_scound_open_page.dart';
-import 'package:music/widgets/body_third_open_page.dart';
 
 void main() {
   runApp(const MusicApp());

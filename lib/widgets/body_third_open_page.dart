@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:music/constants.dart';
 import 'package:music/widgets/Custom_image_when_open_app.dart';
-import 'package:music/widgets/custom_icon_buttom_started.dart';
 import 'package:music/widgets/custom_sub_title.dart';
 import 'package:music/widgets/custom_text.dart';
 import 'package:music/widgets/custom_title.dart';
