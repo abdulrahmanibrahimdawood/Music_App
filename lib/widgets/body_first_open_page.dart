@@ -18,7 +18,7 @@ class BodyFirstOpenPage extends StatelessWidget {
       body: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          const CustomimageWhenOpenApp(image: 'assets/images/m1.jpeg'),
+          const CustomimageWhenOpenApp(image: 'assets/images/one.jpg'),
           const CustomTitle(
             title: 'no ads while',
           ),
@@ -41,7 +41,7 @@ class BodyFirstOpenPage extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(left: 30.0),
                 child: CustomTextButtom(
-                  colorFont: kPrimaryColor.withOpacity(0.4),
+                  colorFont: kPrimaryColor,
                   fontSize: 18,
                   text: 'skip',
                   hight: 50,

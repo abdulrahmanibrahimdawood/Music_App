@@ -18,7 +18,7 @@ class BodyScoundtOpenPage extends StatelessWidget {
       body: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          const CustomimageWhenOpenApp(image: 'assets/images/m2.jpeg'),
+          const CustomimageWhenOpenApp(image: 'assets/images/two.jpg'),
           const CustomTitle(
             title: 'listen to',
           ),
@@ -41,7 +41,7 @@ class BodyScoundtOpenPage extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(left: 30.0),
                 child: CustomTextButtom(
-                  colorFont: kPrimaryColor.withOpacity(0.4),
+                  colorFont: kPrimaryColor,
                   fontSize: 18,
                   text: 'skip',
                   hight: 50,

@@ -17,7 +17,7 @@ class BodyThirdOpenPage extends StatelessWidget {
       body: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          const CustomimageWhenOpenApp(image: 'assets/images/m3.jpeg'),
+          const CustomimageWhenOpenApp(image: 'assets/images/three.jpg'),
           const CustomTitle(
             title: 'share',
           ),
@@ -41,7 +41,7 @@ class BodyThirdOpenPage extends StatelessWidget {
                 padding: const EdgeInsets.only(left: 30.0),
                 child: CustomTextButtom(
                   borderColor: kPrimaryColor,
-                  colorFont: kPrimaryColor.withOpacity(0.4),
+                  colorFont: kPrimaryColor,
                   fontSize: 20,
                   text: 'log in',
                   hight: 60,

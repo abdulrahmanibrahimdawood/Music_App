@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:music/constants.dart';
 
 class CustomSubTitle extends StatelessWidget {
   const CustomSubTitle({
@@ -11,9 +10,9 @@ class CustomSubTitle extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       subTitle,
-      style: TextStyle(
+      style: const TextStyle(
         fontWeight: FontWeight.bold,
-        color: kPrimaryColor.withOpacity(0.3),
+        color: Colors.black,
       ),
     );
   }
