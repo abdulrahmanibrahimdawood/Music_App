@@ -10,8 +10,6 @@ class CustomimageWhenOpenApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Image.asset(
       image,
-      height: 500,
-      width: 350,
     );
   }
 }

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:music/constants.dart';
 import 'package:music/pages/first_open_page.dart';
+import 'package:music/pages/on_board-screen.dart';
 import 'package:music/pages/scound_open_page.dart';
 import 'package:music/pages/third_open_page.dart';
 
@@ -18,10 +19,14 @@ class MusicApp extends StatelessWidget {
         kFirsttOpenPage: (context) => FirstOpenPage(),
         kScoundtOpenPage: (context) => ScoundOpenPage(),
         kThirdOpenPage: (context) => ThirdOpenPage(),
+        kOnBoardScreenState: (context) => OnBoardScreenState(),
       },
       theme: ThemeData(fontFamily: 'Poppins'),
       debugShowCheckedModeBanner: false,
-      initialRoute: kFirsttOpenPage,
+      home: const Scaffold(
+        body: OnBoardScreenState(),
+      ),
+      // initialRoute: kOnBoardScreenState,
     );
   }
 }

@@ -4,3 +4,4 @@ const kPrimaryColor = Color(0xffFBC620);
 const kFirsttOpenPage = 'FirsttOpenPage';
 const kScoundtOpenPage = 'ScoundtOpenPage';
 const kThirdOpenPage = 'ThirdOpenPage';
+const kOnBoardScreenState = 'OnBoardScreenState';
