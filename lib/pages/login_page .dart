@@ -78,7 +78,7 @@ class LoginPage extends StatelessWidget {
                   icon: const Icon(
                     Icons.facebook,
                     size: 52,
-                    color: Colors.blue,
+                    color: Color(0xff3A5794),
                   ),
                 ),
                 const SizedBox(
@@ -89,7 +89,7 @@ class LoginPage extends StatelessWidget {
                   icon: const Icon(
                     FontAwesomeIcons.google,
                     size: 48,
-                    color: Colors.red,
+                    color: Color(0xffEA4B3E),
                   ),
                 ),
                 const SizedBox(
@@ -100,7 +100,7 @@ class LoginPage extends StatelessWidget {
                   icon: const Icon(
                     FontAwesomeIcons.twitter,
                     size: 50,
-                    color: Colors.blue,
+                    color: Color(0xff5CAEED),
                   ),
                 ),
               ],
