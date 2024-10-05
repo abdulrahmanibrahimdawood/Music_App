@@ -19,13 +19,13 @@ class LoginPage extends StatelessWidget {
         ),
       ),
       backgroundColor: const Color(0xffFFFFFF),
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            Image.asset('assets/images/login.jpeg'),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 30),
-              child: TextField(
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 30),
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Image.asset('assets/images/login.jpeg'),
+              TextField(
                 decoration: InputDecoration(
                   filled: true,
                   fillColor: Colors.blue.withOpacity(0.2),
@@ -35,15 +35,20 @@ class LoginPage extends StatelessWidget {
                     borderSide: BorderSide.none,
                     borderRadius: BorderRadius.circular(100),
                   ),
+                  enabledBorder: OutlineInputBorder(
+                    borderSide: BorderSide.none,
+                    borderRadius: BorderRadius.circular(100),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide.none,
+                    borderRadius: BorderRadius.circular(100),
+                  ),
                 ),
               ),
-            ),
-            const SizedBox(
-              height: 30,
-            ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 30),
-              child: Container(
+              const SizedBox(
+                height: 30,
+              ),
+              Container(
                 height: 60,
                 decoration: BoxDecoration(
                   color: Colors.blue,
@@ -56,73 +61,73 @@ class LoginPage extends StatelessWidget {
                   ),
                 ),
               ),
-            ),
-            const SizedBox(
-              height: 30,
-            ),
-            const Text(
-              'OR login with',
-              style: TextStyle(
-                  color: Colors.blue,
-                  fontSize: 16,
-                  fontWeight: FontWeight.bold),
-            ),
-            const SizedBox(
-              height: 15,
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                IconButton(
-                  onPressed: () {},
-                  icon: const Icon(
-                    Icons.facebook,
-                    size: 52,
-                    color: Color(0xff3A5794),
+              const SizedBox(
+                height: 30,
+              ),
+              const Text(
+                'OR login with',
+                style: TextStyle(
+                    color: Colors.blue,
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold),
+              ),
+              const SizedBox(
+                height: 15,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  IconButton(
+                    onPressed: () {},
+                    icon: const Icon(
+                      Icons.facebook,
+                      size: 52,
+                      color: Color(0xff3A5794),
+                    ),
                   ),
-                ),
-                const SizedBox(
-                  width: 20,
-                ),
-                IconButton(
-                  onPressed: () {},
-                  icon: const Icon(
-                    FontAwesomeIcons.google,
-                    size: 48,
-                    color: Color(0xffEA4B3E),
+                  const SizedBox(
+                    width: 20,
                   ),
-                ),
-                const SizedBox(
-                  width: 20,
-                ),
-                IconButton(
-                  onPressed: () {},
-                  icon: const Icon(
-                    FontAwesomeIcons.twitter,
-                    size: 50,
-                    color: Color(0xff5CAEED),
+                  IconButton(
+                    onPressed: () {},
+                    icon: const Icon(
+                      FontAwesomeIcons.google,
+                      size: 48,
+                      color: Color(0xffEA4B3E),
+                    ),
                   ),
-                ),
-              ],
-            ),
-            const SizedBox(
-              height: 30,
-            ),
-            const Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  "Don't have an account?",
-                  style: TextStyle(color: Colors.blue),
-                ),
-                Text(
-                  "  Sign up",
-                  style: TextStyle(
-                      color: Colors.blue, fontWeight: FontWeight.bold),
-                ),
-              ],
-            )
-          ],
+                  const SizedBox(
+                    width: 20,
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: const Icon(
+                      FontAwesomeIcons.twitter,
+                      size: 50,
+                      color: Color(0xff5CAEED),
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(
+                height: 30,
+              ),
+              const Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    "Don't have an account?",
+                    style: TextStyle(color: Colors.blue),
+                  ),
+                  Text(
+                    "  Sign up",
+                    style: TextStyle(
+                        color: Colors.blue, fontWeight: FontWeight.bold),
+                  ),
+                ],
+              )
+            ],
+          ),
         ),
       ),
     );

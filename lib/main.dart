@@ -30,7 +30,7 @@ class MusicApp extends StatelessWidget {
       theme: ThemeData(fontFamily: 'Poppins'),
       debugShowCheckedModeBanner: false,
       home: const Scaffold(
-        body: VerificationPage(),
+        body: LoginPage(),
       ),
       // initialRoute: kOnBoardScreenState,
     );
