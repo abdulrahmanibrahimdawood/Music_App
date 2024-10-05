@@ -47,22 +47,36 @@ class VerificationPage extends StatelessWidget {
               const SizedBox(
                 height: 30,
               ),
-              TextField(
+              TextFormField(
+                maxLength: 5,
+                keyboardType: TextInputType.number,
+                textAlign: TextAlign.center,
                 decoration: InputDecoration(
                   filled: true,
                   fillColor: Colors.blue.withOpacity(0.2),
-                  border: OutlineInputBorder(
-                    borderSide: BorderSide.none,
-                    borderRadius: BorderRadius.circular(100),
-                  ),
                   enabledBorder: OutlineInputBorder(
-                    borderSide: BorderSide.none,
                     borderRadius: BorderRadius.circular(100),
+                    borderSide: BorderSide.none,
                   ),
                   focusedBorder: OutlineInputBorder(
-                    borderSide: BorderSide.none,
                     borderRadius: BorderRadius.circular(100),
+                    borderSide: BorderSide.none,
                   ),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(100),
+                    borderSide: BorderSide.none,
+                  ),
+                  counterText: "",
+                  hintText: ' _ _ _ _ _ ',
+                  hintStyle: TextStyle(
+                    fontSize: 24,
+                    color: Colors.blue.withOpacity(0.5),
+                    letterSpacing: 15,
+                  ),
+                ),
+                style: const TextStyle(
+                  fontSize: 24,
+                  letterSpacing: 15,
                 ),
               ),
               const SizedBox(
