@@ -5,3 +5,6 @@ const kFirsttOpenPage = 'FirsttOpenPage';
 const kScoundtOpenPage = 'ScoundtOpenPage';
 const kThirdOpenPage = 'ThirdOpenPage';
 const kOnBoardScreenState = 'OnBoardScreenState';
+const kLoginPage = 'LoginPage';
+const kVerificationPage = 'VerificationPage';
+const kAccountCreatedPage = 'AccountCreatedPage';
