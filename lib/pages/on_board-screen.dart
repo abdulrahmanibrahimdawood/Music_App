@@ -72,9 +72,11 @@ class _OnBoardScreenStateState extends State<OnBoardScreenState> {
                 ),
                 InkWell(
                   onTap: () {
-                    controller.animateToPage(index + 1,
-                        duration: const Duration(milliseconds: 250),
-                        curve: Curves.linear);
+                    index == 2
+                        ? Navigator.pushNamed(context, kLoginPage)
+                        : controller.animateToPage(index + 1,
+                            duration: const Duration(milliseconds: 250),
+                            curve: Curves.linear);
                   },
                   child: Container(
                     height: 60,

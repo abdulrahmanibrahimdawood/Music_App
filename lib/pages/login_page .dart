@@ -12,17 +12,10 @@ class LoginPage extends StatelessWidget {
         elevation: 0,
         backgroundColor: const Color(0xffFFFFFF),
         centerTitle: true,
-        title: const Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              'Login',
-              style: TextStyle(
-                  fontSize: 24,
-                  color: Colors.blue,
-                  fontWeight: FontWeight.bold),
-            ),
-          ],
+        title: const Text(
+          'Login',
+          style: TextStyle(
+              fontSize: 24, color: Colors.blue, fontWeight: FontWeight.bold),
         ),
       ),
       backgroundColor: const Color(0xffFFFFFF),
