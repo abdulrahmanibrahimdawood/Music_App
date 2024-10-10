@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:music/constants.dart';
+import 'package:otp_text_field_v2/otp_field_style_v2.dart';
+import 'package:otp_text_field_v2/otp_field_v2.dart';
+import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class VerificationPage extends StatelessWidget {
   const VerificationPage({super.key});
@@ -47,36 +50,31 @@ class VerificationPage extends StatelessWidget {
               const SizedBox(
                 height: 30,
               ),
-              TextFormField(
-                maxLength: 5,
-                keyboardType: TextInputType.number,
-                textAlign: TextAlign.center,
-                decoration: InputDecoration(
-                  filled: true,
-                  fillColor: Colors.blue.withOpacity(0.2),
-                  enabledBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(100),
-                    borderSide: BorderSide.none,
-                  ),
-                  focusedBorder: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(100),
-                    borderSide: BorderSide.none,
-                  ),
-                  border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(100),
-                    borderSide: BorderSide.none,
-                  ),
-                  counterText: "",
-                  hintText: ' _ _ _ _ _ ',
-                  hintStyle: TextStyle(
-                    fontSize: 24,
-                    color: Colors.blue.withOpacity(0.5),
-                    letterSpacing: 15,
-                  ),
+              Container(
+                padding: const EdgeInsets.only(bottom: 16),
+                decoration: BoxDecoration(
+                  color: Colors.blue.withOpacity(.2),
+                  borderRadius: BorderRadius.circular(30),
                 ),
-                style: const TextStyle(
-                  fontSize: 24,
-                  letterSpacing: 15,
+                child: OTPTextFieldV2(
+                  controller: OtpFieldControllerV2(),
+                  length: 5,
+                  width: MediaQuery.of(context).size.width,
+                  textFieldAlignment: MainAxisAlignment.center,
+                  fieldWidth: 45,
+                  spaceBetween: 20,
+                  otpFieldStyle: OtpFieldStyle(
+                      enabledBorderColor: Colors.blue,
+                      borderColor: Colors.blue),
+                  fieldStyle: FieldStyle.underline,
+                  outlineBorderRadius: 15,
+                  style: const TextStyle(fontSize: 17),
+                  onChanged: (pin) {
+                    print("Changed: " + pin);
+                  },
+                  onCompleted: (pin) {
+                    print("Completed: " + pin);
+                  },
                 ),
               ),
               const SizedBox(
