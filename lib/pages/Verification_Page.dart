@@ -22,7 +22,7 @@ class VerificationPage extends StatelessWidget {
         elevation: 0,
         backgroundColor: const Color(0xffFFFFFF),
         title: const Text(
-          'Login with mobile number',
+          'Login With Mobile Number',
           style: TextStyle(
               fontSize: 24, color: Colors.blue, fontWeight: FontWeight.bold),
         ),
