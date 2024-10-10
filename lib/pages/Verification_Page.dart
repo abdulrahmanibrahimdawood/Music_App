@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:music/constants.dart';
 import 'package:otp_text_field_v2/otp_field_style_v2.dart';
 import 'package:otp_text_field_v2/otp_field_v2.dart';
-import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class VerificationPage extends StatelessWidget {
   const VerificationPage({super.key});
@@ -11,9 +10,17 @@ class VerificationPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: IconButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          icon: const Icon(
+            Icons.arrow_back,
+            color: Colors.blue,
+          ),
+        ),
         elevation: 0,
         backgroundColor: const Color(0xffFFFFFF),
-        centerTitle: true,
         title: const Text(
           'Login with mobile number',
           style: TextStyle(
@@ -92,16 +99,21 @@ class VerificationPage extends StatelessWidget {
               const SizedBox(
                 height: 30,
               ),
-              Container(
-                height: 60,
-                decoration: BoxDecoration(
-                  color: Colors.blue,
-                  borderRadius: BorderRadius.circular(100),
-                ),
-                child: const Center(
-                  child: Text(
-                    'Verify',
-                    style: TextStyle(fontSize: 24, color: Colors.white),
+              GestureDetector(
+                onTap: () {
+                  Navigator.pushNamed(context, kAccountCreatedPage);
+                },
+                child: Container(
+                  height: 60,
+                  decoration: BoxDecoration(
+                    color: Colors.blue,
+                    borderRadius: BorderRadius.circular(100),
+                  ),
+                  child: const Center(
+                    child: Text(
+                      'Verify',
+                      style: TextStyle(fontSize: 24, color: Colors.white),
+                    ),
                   ),
                 ),
               ),

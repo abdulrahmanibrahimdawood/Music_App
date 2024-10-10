@@ -12,10 +12,17 @@ class LoginPage extends StatelessWidget {
         elevation: 0,
         backgroundColor: const Color(0xffFFFFFF),
         centerTitle: true,
-        title: const Text(
-          'Login',
-          style: TextStyle(
-              fontSize: 24, color: Colors.blue, fontWeight: FontWeight.bold),
+        title: const Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              'Login',
+              style: TextStyle(
+                  fontSize: 24,
+                  color: Colors.blue,
+                  fontWeight: FontWeight.bold),
+            ),
+          ],
         ),
       ),
       backgroundColor: const Color(0xffFFFFFF),
@@ -48,16 +55,26 @@ class LoginPage extends StatelessWidget {
               const SizedBox(
                 height: 30,
               ),
-              Container(
-                height: 60,
-                decoration: BoxDecoration(
-                  color: Colors.blue,
-                  borderRadius: BorderRadius.circular(100),
-                ),
-                child: const Center(
-                  child: Text(
-                    'Login',
-                    style: TextStyle(fontSize: 24, color: Colors.white),
+              GestureDetector(
+                onTap: () {
+                  Navigator.pushNamed(context, kVerificationPage);
+                },
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.pushNamed(context, kVerificationPage);
+                  },
+                  child: Container(
+                    height: 60,
+                    decoration: BoxDecoration(
+                      color: Colors.blue,
+                      borderRadius: BorderRadius.circular(100),
+                    ),
+                    child: const Center(
+                      child: Text(
+                        'Login',
+                        style: TextStyle(fontSize: 24, color: Colors.white),
+                      ),
+                    ),
                   ),
                 ),
               ),

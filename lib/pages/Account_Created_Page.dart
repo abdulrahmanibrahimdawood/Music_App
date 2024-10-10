@@ -8,11 +8,19 @@ class AccountCreatedPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: IconButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          icon: const Icon(
+            Icons.arrow_back,
+            color: Colors.blue,
+          ),
+        ),
         elevation: 0,
         backgroundColor: const Color(0xffFFFFFF),
-        centerTitle: true,
         title: const Text(
-          'Account created',
+          'Account Created',
           style: TextStyle(
               fontSize: 24, color: Colors.blue, fontWeight: FontWeight.bold),
         ),
